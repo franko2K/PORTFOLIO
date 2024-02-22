@@ -1,0 +1,40 @@
+ /* .pagination{text-align: center;}
+
+ .pagination a{color: black;
+text-decoration: none;
+padding: 8px 15px;
+display: inline-block;}
+
+.pagination a.active{
+    background-color: rgb(131, 216, 3);
+    font-weight: bold;
+    border-radius: 6px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(179, 167, 167);
+    border-radius: 6px;
+}*/
+
+#box1{
+    width: 150px;
+    height: 150px;
+    border: 4px dotted;
+    font-size: 8em;
+    text-align: center;
+    background-color: hsl(182, 38%, 49%);
+    animation-name: slideLeft;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideLeft{
+    from{transform: translateY(100PX);}
+}
+@keyframes colorChange{
+    0%{ background-color: hsl(182, 38%, 49%);}
+    20%{ background-color: hsl(216, 93%, 41%);}
+    40%{ background-color: hsl(300, 94%, 14%);}
+    60%{ background-color: hsl(86, 95%, 45%);}
+    80%{ background-color: hsl(315, 93%, 45%);}
+    100%{ background-color: hsl(56, 94%, 51%);}
+}
